@@ -1,6 +1,6 @@
 {
   "name": "ig-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read-only Instagram CLI (Instagram API with Instagram Login, graph.instagram.com) that emits structured JSON for AI agents.",
   "type": "module",
   "license": "MIT",

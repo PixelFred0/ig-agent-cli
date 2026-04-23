@@ -6,7 +6,15 @@ All notable user-visible changes are documented here. Format follows [Keep a Cha
 
 Nothing yet.
 
-## [0.1.0] — unreleased
+## [0.1.1] — 2026-04-23
+
+First release published through the automated CI pipeline via npm **trusted publishing** (OIDC). No runtime changes to the CLI; this release proves the publish workflow works end-to-end without any stored npm token.
+
+### Changed
+
+- Publish workflow (`.github/workflows/publish.yml`) now authenticates to npm via GitHub Actions OIDC trusted publishing — no `NPM_TOKEN` secret required.
+
+## [0.1.0] — 2026-04-23
 
 First public release.
 
@@ -43,5 +51,6 @@ First public release.
 - Log redaction covers `EAA…` / `IGAA…` / `IGQ…` token prefixes, `access_token=` / `client_secret=` / `ig_exchange_token=` / `ig_refresh_token=` URL params, JSON `"access_token": "…"` fields, and any ≥80-character base64-ish string.
 - No background network traffic. Every call is a direct consequence of a user command.
 
-[Unreleased]: https://github.com/PixelFred0/ig-agent-cli/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/PixelFred0/ig-agent-cli/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/PixelFred0/ig-agent-cli/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/PixelFred0/ig-agent-cli/releases/tag/v0.1.0
