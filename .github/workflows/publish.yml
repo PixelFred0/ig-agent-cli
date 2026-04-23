@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Install npm 11.x (required for OIDC trusted publishing)
+        run: npm install -g npm@11
       - run: bun install --frozen-lockfile
       - run: bunx tsc --noEmit
       - run: bun test
