@@ -3,6 +3,7 @@ name: Publish to npm
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch: {}
 
 permissions:
   contents: read
@@ -18,13 +19,14 @@ jobs:
           bun-version: latest
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          registry-url: "https://registry.npmjs.org"
+          node-version: 22
+      - run: npm install -g npm@latest
       - run: bun install --frozen-lockfile
       - run: bunx tsc --noEmit
       - run: bun test
       - run: bun run build
       - name: Verify tag matches package.json version
+        if: github.event_name == 'push'
         run: |
           PKG_VERSION="v$(node -p "require('./package.json').version")"
           if [ "${GITHUB_REF_NAME}" != "$PKG_VERSION" ]; then
@@ -32,5 +34,3 @@ jobs:
             exit 1
           fi
       - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
