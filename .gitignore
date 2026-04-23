@@ -5,6 +5,9 @@ node_modules
 out
 dist
 *.tgz
+*.db
+*.db-wal
+*.db-shm
 
 # code coverage
 coverage
@@ -32,3 +35,12 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# personal maintainer notes
+RELEASING.md
+MAINTAINER.md
+
+# Claude Code per-developer state. Everything else under .claude/
+# (shared settings.json, slash commands, hooks) is committed so contributors
+# inherit the project's conventions.
+.claude/settings.local.json

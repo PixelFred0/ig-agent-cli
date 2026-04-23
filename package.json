@@ -1,10 +1,62 @@
 {
   "name": "ig-agent",
-  "module": "index.ts",
+  "version": "0.1.0",
+  "description": "Read-only Instagram CLI (Instagram API with Instagram Login, graph.instagram.com) that emits structured JSON for AI agents.",
   "type": "module",
-  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "PixelFred0",
+    "url": "https://github.com/PixelFred0"
+  },
+  "homepage": "https://github.com/PixelFred0/ig-agent#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PixelFred0/ig-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PixelFred0/ig-agent/issues"
+  },
+  "keywords": [
+    "instagram",
+    "instagram-graph-api",
+    "cli",
+    "ai-agent",
+    "mcp",
+    "claude-code",
+    "reels",
+    "insights",
+    "social-media"
+  ],
+  "bin": {
+    "ig-agent": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "bun run src/cli.ts",
+    "build": "bun build src/cli.ts --target=node --outdir dist --minify --banner \"#!/usr/bin/env node\" && chmod +x dist/cli.js",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "citty": "^0.1.6",
+    "consola": "^3.2.3",
+    "env-paths": "^3.0.0",
+    "open": "^10.1.0",
+    "zod": "^3.23.8"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/bun": "latest",
+    "@types/node": "^22.10.0"
   },
   "peerDependencies": {
     "typescript": "^5"

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/PixelFred0/ig-agent/blob/main/SECURITY.md
+    about: Please do NOT open a public issue for security problems. See SECURITY.md for private disclosure.
+  - name: Setup help (Meta Developer console, OAuth redirect URIs, tester roles)
+    url: https://github.com/PixelFred0/ig-agent/blob/main/SETUP.md
+    about: Most first-run issues are addressed in SETUP.md — please read it before filing a bug.
