@@ -43,5 +43,5 @@ First public release.
 - Log redaction covers `EAA…` / `IGAA…` / `IGQ…` token prefixes, `access_token=` / `client_secret=` / `ig_exchange_token=` / `ig_refresh_token=` URL params, JSON `"access_token": "…"` fields, and any ≥80-character base64-ish string.
 - No background network traffic. Every call is a direct consequence of a user command.
 
-[Unreleased]: https://github.com/PixelFred0/ig-agent/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/PixelFred0/ig-agent/releases/tag/v0.1.0
+[Unreleased]: https://github.com/PixelFred0/ig-agent-cli/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/PixelFred0/ig-agent-cli/releases/tag/v0.1.0

@@ -1,6 +1,6 @@
 # ig-agent
 
-[![CI](https://github.com/PixelFred0/ig-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/PixelFred0/ig-agent/actions/workflows/ci.yml)
+[![CI](https://github.com/PixelFred0/ig-agent-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/PixelFred0/ig-agent-cli/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 <!-- npm version + download badges will be added here after the first npm publish. -->
 
@@ -27,8 +27,8 @@ Requires Node ≥ 20 at runtime.
 This repo ships an agent skill at [skills/ig-agent/](skills/ig-agent/) that teaches Claude how to use the CLI — commands, return shapes, exit-code handling, and cache-first workflows. Install it with [skills.sh](https://skills.sh):
 
 ```sh
-npx skills add PixelFred0/ig-agent -g      # global — available across all your projects
-npx skills add PixelFred0/ig-agent         # project-local, scoped to the current repo
+npx skills add PixelFred0/ig-agent-cli -g  # global — available across all your projects
+npx skills add PixelFred0/ig-agent-cli     # project-local, scoped to the current repo
 ```
 
 After that, any Claude Code session picks the skill up automatically when the user's request involves their Instagram content. First thing the skill does is run `ig-agent auth status` — if that errors, it tells the user to `npm install -g ig-agent` first.

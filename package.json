@@ -8,13 +8,13 @@
     "name": "PixelFred0",
     "url": "https://github.com/PixelFred0"
   },
-  "homepage": "https://github.com/PixelFred0/ig-agent#readme",
+  "homepage": "https://github.com/PixelFred0/ig-agent-cli#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PixelFred0/ig-agent.git"
+    "url": "git+https://github.com/PixelFred0/ig-agent-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/PixelFred0/ig-agent/issues"
+    "url": "https://github.com/PixelFred0/ig-agent-cli/issues"
   },
   "keywords": [
     "instagram",
