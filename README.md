@@ -1,8 +1,9 @@
 # ig-agent
 
 [![CI](https://github.com/PixelFred0/ig-agent-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/PixelFred0/ig-agent-cli/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/ig-agent.svg)](https://www.npmjs.com/package/ig-agent)
+[![npm downloads](https://img.shields.io/npm/dm/ig-agent.svg)](https://www.npmjs.com/package/ig-agent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-<!-- npm version + download badges will be added here after the first npm publish. -->
 
 A read-only Instagram Graph API CLI that emits structured JSON for AI agents. Uses Meta's **Instagram API with Instagram Login** — no Facebook Page required.
 
